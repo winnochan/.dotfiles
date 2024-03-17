@@ -1,6 +1,3 @@
-[submodule ".emacs.d"]
-	path = 3rd/chemacs2
-	url = https://gitee.com/mirrors_plexus/chemacs2.git
 [submodule ".doomemacs"]
 	path = 3rd/doomemacs
 	url = https://gitee.com/winnochan/doomemacs.git
@@ -10,9 +7,6 @@
 [submodule "3rd/asdf"]
 	path = 3rd/asdf
 	url = https://gitee.com/winnochan/asdf.git
-[submodule "3rd/zi"]
-	path = 3rd/zi/bin
-	url = https://gitee.com/winnochan/zi.git
 [submodule "chemacs2"]
 	path = 3rd/chemacs2
 	url = https://gitee.com/mirrors_plexus/chemacs2.git
