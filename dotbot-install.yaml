@@ -1,0 +1,19 @@
+- defaults:
+    link:
+      relink: true
+
+- link:
+    ~/.emacs.d:
+      path: 3rd/chemacs2
+    ~/.spacemacs:
+      path: 3rd/spacemacs
+    ~/.doomemacs:
+      path: 3rd/doomemacs
+    ~/.emacs-profiles.el:
+      path: emacs-profiles.el
+    ~/.spacemacs.d:
+      path: spacemacs.d
+    ~/.zshenv:
+      path: zsh/zshenv
+    ~/.zshrc:
+      path: zsh/zshrc
