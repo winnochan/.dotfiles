@@ -421,10 +421,10 @@ This function should only modify configuration layer settings."
    dotspacemacs-excluded-packages '(
                                     google-translate
                                     fancy-battery
-                                    evil
-                                    evil-terminal-cursor-changer
+                                    ;; evil
+                                    ;; evil-terminal-cursor-changer
                                     browse-at-remote
-                                    volatile-highlights
+                                    ;; volatile-highlights
                                     )
 
    ;; Defines the behaviour of Spacemacs when installing packages.
@@ -514,7 +514,7 @@ It should only modify the values of Spacemacs settings."
    ;; with `:variables' keyword (similar to layers). Check the editing styles
    ;; section of the documentation for details on available variables.
    ;; (default 'vim)
-   dotspacemacs-editing-style 'emacs
+   dotspacemacs-editing-style 'vim
 
    ;; If non-nil show the version string in the Spacemacs buffer. It will
    ;; appear as (spacemacs version)@(emacs version)
@@ -767,7 +767,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; Code folding method. Possible values are `evil', `origami' and `vimish'.
    ;; (default 'evil)
-   dotspacemacs-folding-method 'vimish
+   dotspacemacs-folding-method 'evil
 
    ;; If non-nil `smartparens-strict-mode' will be enabled in programming modes.
    ;; (default nil)
