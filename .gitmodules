@@ -1,9 +1,15 @@
 [submodule ".emacs.d"]
-	path = chemacs2
+	path = 3rd/chemacs2
 	url = https://gitee.com/mirrors_plexus/chemacs2.git
 [submodule ".doomemacs"]
-	path = doomemacs
+	path = 3rd/doomemacs
 	url = https://gitee.com/winnochan/doomemacs.git
 [submodule ".spacemacs"]
-	path = spacemacs
+	path = 3rd/spacemacs
 	url = https://gitee.com/mirrors/spacemacs.git
+[submodule "3rd/asdf"]
+	path = 3rd/asdf
+	url = https://gitee.com/winnochan/asdf.git
+[submodule "3rd/zi"]
+	path = 3rd/backup
+	url = https://gitee.com/winnochan/zi.git
