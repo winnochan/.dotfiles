@@ -13,3 +13,6 @@
 [submodule "3rd/zi"]
 	path = 3rd/zi/bin
 	url = https://gitee.com/winnochan/zi.git
+[submodule "chemacs2"]
+	path = 3rd/chemacs2
+	url = https://gitee.com/mirrors_plexus/chemacs2.git
