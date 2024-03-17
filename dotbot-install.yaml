@@ -5,14 +5,16 @@
 - link:
     ~/.emacs.d:
       path: 3rd/chemacs2
+    ~/.emacs-profiles.el:
+      path: emacs-profiles.el
     ~/.spacemacs:
       path: 3rd/spacemacs
     ~/.doomemacs:
       path: 3rd/doomemacs
-    ~/.emacs-profiles.el:
-      path: emacs-profiles.el
     ~/.spacemacs.d:
       path: spacemacs.d
+    ~/.doom.d:
+      path: doomemacs.d
 
 - shell:
   - bash zsh/install.sh
