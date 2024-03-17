@@ -7,3 +7,9 @@
 [submodule "spacemacs"]
 	path = 3rd/spacemacs
 	url = https://gitee.com/mirrors/spacemacs.git
+[submodule "asdf"]
+	path = 3rd/asdf
+	url = https://gitee.com/winnochan/asdf.git
+[submodule "zi"]
+	path = 3rd/zi/bin
+	url = https://gitee.com/winnochan/zi.git
