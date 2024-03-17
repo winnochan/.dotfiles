@@ -11,5 +11,5 @@
 	path = 3rd/asdf
 	url = https://gitee.com/winnochan/asdf.git
 [submodule "3rd/zi"]
-	path = 3rd/backup
+	path = 3rd/zi/bin
 	url = https://gitee.com/winnochan/zi.git
