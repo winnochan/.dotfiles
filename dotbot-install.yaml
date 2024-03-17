@@ -13,7 +13,6 @@
       path: emacs-profiles.el
     ~/.spacemacs.d:
       path: spacemacs.d
-    ~/.zshenv:
-      path: zsh/zshenv
-    ~/.zshrc:
-      path: zsh/zshrc
+
+- shell:
+  - bash zsh/install.sh
