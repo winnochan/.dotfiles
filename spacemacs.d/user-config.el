@@ -9,17 +9,13 @@
 ;; (setq projectile-indexing-method 'hybrid)
 
 ;; 多行移动
-;; (global-set-key (kbd "C-M-n")
-;;                 (lambda () (interactive) (next-line 7)))
-;; (global-set-key (kbd "C-M-p")
-;;                 (lambda () (interactive) (previous-line 7)))
 (global-set-key (kbd "M-n")
                 (lambda () (interactive) (next-line 5)))
 (global-set-key (kbd "M-p")
                 (lambda () (interactive) (previous-line 5)))
 
-(global-set-key (kbd "C-z") 'undo)
-(global-set-key (kbd "M-z") 'redo)
+(global-set-key (kbd "C-/") 'undo)
+(global-set-key (kbd "M-/") 'redo)
 
 ;; 设置单行的复制以剪切
 (defadvice kill-ring-save (before slickcopy activate compile)
