@@ -19,3 +19,6 @@
 [submodule "spacevim"]
 	path = 3rd/spacevim
 	url = https://gitee.com/winnochan/SpaceVim.git
+[submodule "doom-nvim"]
+	path = 3rd/doom-nvim
+	url = https://gitee.com/winnochan/doom-nvim.git
