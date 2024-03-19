@@ -16,3 +16,6 @@
 [submodule "cheovim"]
 	path = 3rd/cheovim
 	url = https://gitee.com/mirrors_ntbbloodbath/cheovim.git
+[submodule "spacevim"]
+	path = 3rd/spacevim
+	url = https://gitee.com/winnochan/SpaceVim.git
