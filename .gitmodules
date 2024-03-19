@@ -13,3 +13,6 @@
 [submodule "zi"]
 	path = 3rd/zi/bin
 	url = https://gitee.com/winnochan/zi.git
+[submodule "cheovim"]
+	path = 3rd/cheovim
+	url = https://gitee.com/mirrors_ntbbloodbath/cheovim.git
