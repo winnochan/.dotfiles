@@ -69,13 +69,13 @@ This function should only modify configuration layer settings."
      ;;                 spell-checking-enable-by-default nil
      ;;                 spell-checking-enable-auto-dictionary nil
      ;;                 enable-flyspell-auto-completion nil)
-     ;; (syntax-checking :variables
-     ;;                  ;; syntax-checking-enable-tooltips t
-     ;;                  ;; syntax-checking-auto-hide-tooltips nil
-     ;;                  ;; syntax-checking-enable-by-default t
-     ;;                  ;; syntax-checking-use-original-bitmaps nil
-     ;;                  ;; syntax-checking-use-standard-error-navigation nil
-     ;;                  )
+     (syntax-checking :variables
+                      ;; syntax-checking-enable-tooltips t
+                      ;; syntax-checking-auto-hide-tooltips nil
+                      ;; syntax-checking-enable-by-default t
+                      ;; syntax-checking-use-original-bitmaps nil
+                      ;; syntax-checking-use-standard-error-navigation nil
+                      )
 
      ;; completion
      (helm :variables
@@ -157,25 +157,25 @@ This function should only modify configuration layer settings."
 
      ;; lang
      ;; bibtex
-     ;; (c-c++ :variables
-     ;;        ;; c-c++-backend 'lsp-ccls
-     ;;        c-c++-backend 'lsp-clangd
-     ;;        c-c++-lsp-enable-semantic-highlight 'rainbow
-     ;;        ;; c-c++-lsp-semantic-highlight-method 'font-lock
+     (c-c++ :variables
+            c-c++-backend 'lsp-ccls
+            ;; c-c++-backend 'lsp-clangd
+            c-c++-lsp-enable-semantic-highlight 'rainbow
+            ;; c-c++-lsp-semantic-highlight-method 'font-lock
 
-     ;;        ;; c-c++-dap-adapters '(dap-cpptools)
-     ;;        ;; c-c++-enable-rtags-completion nil
-     ;;        c-c++-enable-clang-format-on-save t
-     ;;        c-c++-enable-organize-includes-on-save t
+            ;; c-c++-dap-adapters '(dap-cpptools)
+            ;; c-c++-enable-rtags-completion nil
+            c-c++-enable-clang-format-on-save t
+            c-c++-enable-organize-includes-on-save t
 
-     ;;        ;; c-c++-enable-auto-newline nil
-     ;;        ;; c-c++-enable-google-style nil
-     ;;        ;; c-c++-enable-google-newline nil
+            ;; c-c++-enable-auto-newline nil
+            c-c++-enable-google-style t
+            c-c++-enable-google-newline t
 
-     ;;        ;; c-c++-default-mode-for-headers (when (not (functionp 'c-or-c++-mode)) 'c-mode)
+            c-c++-default-mode-for-headers 'c-or-c++-mode
 
-     ;;        c-c++-adopt-subprojects t
-     ;;        )
+            c-c++-adopt-subprojects t
+            )
 
      ;; csharp
      ;; csv
@@ -184,9 +184,9 @@ This function should only modify configuration layer settings."
      ;;       ;; lsp-dart-sdk-dir "~/.zsh/.cache/flutter/bin/cache/dart-sdk/"
      ;;       ;; lsp-enable-on-type-formatting t
      ;;       )
-     ;; (emacs-lisp :variables
-     ;;             ;; emacs-lisp-hide-namespace-prefix nil
-     ;;             )
+     (emacs-lisp :variables
+                 ;; emacs-lisp-hide-namespace-prefix nil
+                 )
      (go :variables
          go-backend 'lsp
          ;; go-use-gocheck-for-testing t
@@ -221,8 +221,12 @@ This function should only modify configuration layer settings."
      ;;       ;; web-mode-enable-current-element-highlight t
      ;;       ;; web-mode-enable-current-column-highlight t
      ;;       )
-     ;; ipython-notebook
-     ;; java
+     (ipython-notebook :variables
+                       ein-backend 'jupyter
+                       )
+     (java :variables
+           java-backend 'lsp
+           )
      (javascript :variables
                  javascript-backend 'lsp
                  javascript-fmt-tool 'prettier
@@ -230,8 +234,8 @@ This function should only modify configuration layer settings."
                  javascript-fmt-on-save t
                  javascript-repl 'nodejs
                  javascript-lsp-linter nil
-                 js2-basic-offset 2
-                 js-indent-level 2
+                 js2-basic-offset 4
+                 js-indent-level 4
                  node-add-modules-path t
                  ;; js2-include-node-externs t
                  ;; js2-mode-show-strict-warnings nil
@@ -241,7 +245,7 @@ This function should only modify configuration layer settings."
            json-backend 'nil
            json-fmt-tool 'prettier
            json-fmt-on-save nil
-           js-indent-level 2
+           js-indent-level 4
            )
      ;; kotlin
      ;; (lua)
@@ -292,9 +296,9 @@ This function should only modify configuration layer settings."
      (shell-scripts :variables
                     shell-scripts-backend nil
                     shell-scripts-format-on-save t
-                    sh-basic-offset 2
-                    sh-indentation 2
-                    smie-indent-basic 2
+                    sh-basic-offset 4
+                    sh-indentation 4
+                    smie-indent-basic 4
                     )
      ;; (sql :variables
      ;;      sql-capitalize-keywords t
@@ -309,7 +313,7 @@ This function should only modify configuration layer settings."
                  typescript-backend 'tide
                  typescript-linter 'eslint
                  ;; typescript-lsp-linter t
-                 typescript-indent-level 2
+                 typescript-indent-level 4
 
                  tide-user-preferences
                  '(:includeCompletionsForImportStatements t :useLabelDetailsInCompletionEntries t)
@@ -327,7 +331,7 @@ This function should only modify configuration layer settings."
                  ;; tide-server-max-response-length 102400
                  )
      (yaml :variables
-           yaml-enable-lsp nil
+           yaml-enable-lsp t
            )
 
      ;; misc
