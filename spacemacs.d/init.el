@@ -158,8 +158,8 @@ This function should only modify configuration layer settings."
      ;; lang
      ;; bibtex
      (c-c++ :variables
-            c-c++-backend 'lsp-ccls
-            ;; c-c++-backend 'lsp-clangd
+            ;; c-c++-backend 'lsp-ccls
+            c-c++-backend 'lsp-clangd
             c-c++-lsp-enable-semantic-highlight 'rainbow
             ;; c-c++-lsp-semantic-highlight-method 'font-lock
 
