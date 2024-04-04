@@ -15,10 +15,20 @@
       path: spacemacs.d
     ~/.doom.d:
       path: doomemacs.d
+    ~/.config/pip:
+      path: config/pip
+    ~/.cargo/config.toml:
+      path: config/cargo/config.toml
+    ~/.npmrc:
+      path: config/npmrc
+    ~/.condarc:
+      path: config/condarc
+    ~/.gitconfig:
+      path: config/gitconfig
 
-- shell:
-  - bash zsh/install.sh
-  - type -p pacman >/dev/null 2>&1 && sudo pacman -Sy --needed --noconfirm curl wget zsh git tig gitui vim neovim emacs-nox fasd fzf ripgrep yazi
-  - sudo chsh -s /usr/bin/zsh
-  # - type -p curl >/dev/null 2>&1 && ! type -p rust >/dev/null 2>&1 && sh -c 'curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs'
-  - type -p asdf >/dev/null 2>&1 && asdf plugin-add golang https://gitee.com/winnochan/asdf-golang.git && asdf plugin-add java https://gitee.com/winnochan/asdf-java.git && asdf plugin-add nodejs https://gitee.com/winnochan/asdf-nodejs.git && asdf plugin-add python https://gitee.com/winnochan/asdf-python.git
+# - shell:
+#   - bash zsh/install.sh
+#   - type -p pacman >/dev/null 2>&1 && sudo pacman -Sy --needed --noconfirm curl wget zsh git tig gitui vim neovim emacs-nox fasd fzf ripgrep yazi
+#   - sudo chsh -s /usr/bin/zsh
+#   # - type -p curl >/dev/null 2>&1 && ! type -p rust >/dev/null 2>&1 && sh -c 'curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs'
+#   - type -p asdf >/dev/null 2>&1 && asdf plugin-add golang https://gitee.com/winnochan/asdf-golang.git && asdf plugin-add java https://gitee.com/winnochan/asdf-java.git && asdf plugin-add nodejs https://gitee.com/winnochan/asdf-nodejs.git && asdf plugin-add python https://gitee.com/winnochan/asdf-python.git

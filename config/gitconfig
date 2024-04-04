@@ -1,0 +1,29 @@
+[user]
+  email = winnochan@163.com
+  name = WinnoChan
+[credential]
+  helper = cache --timeout=2000000000
+# [url "https://mirrors.ustc.edu.cn/homebrew-core.git"]
+#   insteadOf = https://github.com/Homebrew/homebrew-core
+# [url "https://mirrors.ustc.edu.cn/brew.git"]
+#   insteadOf = https://github.com/Homebrew/brew
+[core]
+  quotepath = false
+  precomposeunicode = true
+  editor = vim
+[pull]
+  rebase = false
+# [diff "xlsx"]
+#     binary = true
+#     textconv = git-xlsx-textconv
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+# [url "https://github.com/"]
+#   insteadOf = git@github.com:
+# [http "https://github.com"]
+#   proxy = http://127.0.0.1:1087
+# [https "https://github.com"]
+#   proxy = http://127.0.0.1:1087
