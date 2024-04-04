@@ -107,4 +107,4 @@
 #   ln -s $ZSH_DIR/config/default-npm-packages ~/.default-npm-packages
 #   echo 'link default-npm-packages'
 # fi
-export NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node/
+# export NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node/

@@ -1,0 +1,37 @@
+[http]
+check-revoke = false
+
+[package]
+edition = "2021"
+
+# [source]
+
+[source.sjtu]
+registry = "https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index/"
+
+[source.tuna]
+registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
+
+[source.ustc]
+registry = "https://mirrors.ustc.edu.cn/crates.io-index"
+
+[source.crates-io]
+replace-with = "ustc"
+
+[profile.dev]
+debug = true
+opt-level = 2
+split-debuginfo = "unpacked"
+
+[profile.test]
+debug = true
+opt-level = 2
+split-debuginfo = "unpacked"
+
+[profile.release]
+# lto = true
+opt-level = "s"
+codegen-units = 1
+
+# [profile.doc]
+# panic = 'abort'

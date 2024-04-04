@@ -16,3 +16,6 @@
 [submodule "spacevim"]
 	path = 3rd/spacevim
 	url = https://gitee.com/winnochan/SpaceVim.git
+[submodule "node-build"]
+	path = 3rd/node-build
+	url = https://gitee.com/winnochan/node-build.git
