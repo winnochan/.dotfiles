@@ -25,6 +25,8 @@
       path: config/condarc
     ~/.gitconfig:
       path: config/gitconfig
+    ~/.mongoshrc.js:
+      path: config/mongoshrc.js
 
 # - shell:
 #   - bash zsh/install.sh
