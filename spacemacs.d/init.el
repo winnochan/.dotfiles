@@ -160,19 +160,20 @@ This function should only modify configuration layer settings."
      (c-c++ :variables
             ;; c-c++-backend 'lsp-ccls
             c-c++-backend 'lsp-clangd
-            c-c++-lsp-enable-semantic-highlight 'rainbow
+            ;; c-c++-lsp-enable-semantic-highlight 'rainbow
             ;; c-c++-lsp-semantic-highlight-method 'font-lock
 
-            ;; c-c++-dap-adapters '(dap-cpptools)
+            c-c++-dap-adapters '(dap-gdb-lldb dap-lldb dap-cpptools)
             ;; c-c++-enable-rtags-completion nil
             c-c++-enable-clang-format-on-save t
             c-c++-enable-organize-includes-on-save t
 
             ;; c-c++-enable-auto-newline nil
-            c-c++-enable-google-style t
-            c-c++-enable-google-newline t
+            ;; c-c++-enable-google-style t
+            ;; c-c++-enable-google-newline t
 
-            c-c++-default-mode-for-headers 'c-or-c++-mode
+            ;; c-c++-default-mode-for-headers 'c-or-c++-mode
+            c-c++-default-mode-for-headers 'c++-mode
 
             c-c++-adopt-subprojects t
             )
