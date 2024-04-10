@@ -37,7 +37,7 @@ source ${ZI[BIN_DIR]}/zi.zsh
 if [ "$ZSH_SYS" = "Linux" ]; then
   zi silent wait lucid light-mode for \
      as='program' pick='fasd' from=gitee.com winnochan/fasd \
-     multisrc='plugins/{alias-finder,extract,fasd,git,last-working-dir}/*.plugin.zsh' from=gitee.com mirrors/oh-my-zsh \
+     multisrc='plugins/{alias-finder,extract,fasd,git,last-working-dir,ssh-agent}/*.plugin.zsh' from=gitee.com mirrors/oh-my-zsh \
      multisrc='shell/*.zsh' from=gitee.com mirrors/fzf \
      from=gitee.com winnochan/fzf-fasd \
      from=gitee.com winnochan/zsh-completions \
