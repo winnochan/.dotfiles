@@ -166,14 +166,14 @@ This function should only modify configuration layer settings."
             c-c++-dap-adapters '(dap-gdb-lldb dap-lldb dap-cpptools)
             ;; c-c++-enable-rtags-completion nil
             c-c++-enable-clang-format-on-save t
-            c-c++-enable-organize-includes-on-save t
+            c-c++-enable-organize-includes-on-save nil
 
             ;; c-c++-enable-auto-newline nil
             ;; c-c++-enable-google-style t
             ;; c-c++-enable-google-newline t
 
             ;; c-c++-default-mode-for-headers 'c-or-c++-mode
-            c-c++-default-mode-for-headers 'c++-mode
+            c-c++-default-mode-for-headers 'c-or-c++-mode
 
             c-c++-adopt-subprojects t
             )
@@ -259,28 +259,30 @@ This function should only modify configuration layer settings."
      ;;           plantuml-jar-path "~/.spacemacs.d/3rd/plantuml.jar"
      ;;           org-plantuml-jar-path "~/.spacemacs.d/3rd/plantuml.jar")
      ;; protobuf
-     ;; (python :variables
-     ;;         python-backend 'lsp
-     ;;         python-lsp-server 'pyright
-     ;;         ;; python-lsp-git-root nil
-     ;;         ;; python-pipenv-activate t
-     ;;         python-formatter 'yapf
-     ;;         ;; python-formatter 'yapf
-     ;;         python-format-on-save t
-     ;;         python-test-runner 'pytest
-     ;;         ;; python-save-before-test nil
-     ;;         python-fill-column 120
-     ;;         ;; python-tab-width 4
-     ;;         ;; python-spacemacs-indent-guess t
-     ;;         ;; python-auto-set-local-pyenv-version 'on-project-switch
-     ;;         ;; python-auto-set-local-pyvenv-virtualenv 'on-project-switch
-     ;;         ;; python-sort-imports-on-save t
-     ;;         ;; spacemacs--python-pyenv-modes nil
-     ;;         ;; spacemacs--python-pyvenv-modes nil
-     ;;         ;; spacemacs--python-pipenv-modes nil
-     ;;         ;; python-shell--interpreter nil
-     ;;         ;; python-shell--interpreter-args nil
-     ;;         )/
+     (python :variables
+             python-backend 'lsp
+             ;; python-lsp-server 'pyright
+             ;; python-lsp-git-root nil
+             ;; python-pipenv-activate t
+             python-formatter 'yapf
+             ;; python-formatter 'yapf
+             python-format-on-save t
+             python-test-runner 'pytest
+             ;; python-save-before-test nil
+             python-fill-column 120
+             ;; python-tab-width 4
+             ;; python-spacemacs-indent-guess t
+             ;; python-auto-set-local-pyenv-version 'on-project-switch
+             ;; python-auto-set-local-pyvenv-virtualenv 'on-project-switch
+             ;; python-sort-imports-on-save t
+             ;; spacemacs--python-pyenv-modes nil
+             ;; spacemacs--python-pyvenv-modes t
+             ;; spacemacs--python-pipenv-modes nil
+             ;; spacemacs--python-poetry-modes nil
+             ;; spacemacs--python-shell-interpreter-origin nil
+             ;; python-shell--interpreter nil
+             ;; python-shell--interpreter-args nil
+             )
      (rust :variables
            rust-format-on-save t
            rust-backend 'lsp
