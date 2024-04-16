@@ -1,6 +1,7 @@
 [submodule "chemacs2"]
 	path = 3rd/chemacs2
 	url = https://gitee.com/mirrors_plexus/chemacs2.git
+	ignore = dirty
 [submodule "doomemacs"]
 	path = 3rd/doomemacs
 	url = https://gitee.com/winnochan/doomemacs.git
