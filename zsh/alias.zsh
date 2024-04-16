@@ -1,3 +1,7 @@
+# oj alias
+alias cf="cf-tool"
+alias lc="leetgo"
+
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
@@ -46,9 +50,9 @@ alias crr='cargo run --release'
 alias cr='cargo run'
 
 # gcc / g++ / clang
-alias gcc='gcc -O2'
-alias g++='g++ -O2'
-alias clang='clang -O2'
+# alias gcc='gcc -O2'
+# alias g++='g++ -O2'
+# alias clang='clang -O2'
 
 # rg
 alias rgi="rg -i"
