@@ -252,8 +252,8 @@ This function should only modify configuration layer settings."
            )
      ;; kotlin
      ;; (lua)
-     ;; (markdown :variables
-     ;;           markdown-live-preview-engine 'eww)
+     (markdown :variables
+               markdown-live-preview-engine 'eww)
      ;; (plantuml :variables
      ;;           plantuml-default-exec-mode 'jar
      ;;           plantuml-jar-path "~/.spacemacs.d/3rd/plantuml.jar"
