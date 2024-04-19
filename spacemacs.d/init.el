@@ -261,10 +261,10 @@ This function should only modify configuration layer settings."
      ;; protobuf
      (python :variables
              python-backend 'lsp
-             ;; python-lsp-server 'pyright
+             python-lsp-server 'pyright
              ;; python-lsp-git-root nil
              ;; python-pipenv-activate t
-             python-formatter 'yapf
+             python-formatter 'lsp
              ;; python-formatter 'yapf
              python-format-on-save t
              python-test-runner 'pytest
