@@ -1,0 +1,1 @@
+alias cf="cf-tool"

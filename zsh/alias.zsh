@@ -1,7 +1,3 @@
-# oj alias
-alias cf="cf-tool"
-alias lc="leetgo"
-
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."

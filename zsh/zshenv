@@ -47,6 +47,8 @@ source $ZSH_DIR/plugins/zsh-autosuggestions.plugin.zsh
 source $ZSH_DIR/zi.zsh
 
 source $ZSH_DIR/alias.zsh
+source $ZSH_DIR/codeforces-alias.zsh
+source $ZSH_DIR/leetcode-alias.zsh
 source $ZSH_DIR/custom.zsh
 
 source $ZSH_DIR/plugins/git.plugin.zsh
