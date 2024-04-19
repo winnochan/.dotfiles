@@ -1,6 +1,14 @@
 alias lc="leetgo"
 
 # leetcode 每日一题
+ldt() {
+    if [ "$1" = "" ]; then
+        leetgo pick today
+    else
+        leetgo pick "today-$1"
+    fi
+}
+
 lpt() {
     if [ "$1" = "" ]; then
         leetgo pick today
@@ -28,6 +36,10 @@ lst() {
 # leetcode 常规题目
 lcc() {
     leetgo contest $1
+}
+
+lce() {
+    leetgo edit $1
 }
 
 lcp() {
