@@ -3,9 +3,9 @@ alias lc="leetgo"
 # leetcode 每日一题
 ldt() {
     if [ "$1" = "" ]; then
-        leetgo pick today
+        leetgo edit today
     else
-        leetgo pick "today-$1"
+        leetgo edit "today-$1"
     fi
 }
 

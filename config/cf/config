@@ -9,6 +9,6 @@
     "contest": "contest",
     "group": "group",
     "gym": "gym",
-    "root": "cf"
+    "root": "oj/codeforces"
   }
 }
