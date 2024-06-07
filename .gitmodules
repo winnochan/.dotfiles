@@ -20,3 +20,7 @@
 [submodule "node-build"]
 	path = 3rd/node-build
 	url = https://gitee.com/winnochan/node-build.git
+[submodule "dotbot"]
+	path = 3rd/dotbot
+	url = https://gitee.com/winnochan/dotbot.git
+	ignore = dirty
